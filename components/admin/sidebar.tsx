@@ -310,9 +310,9 @@ export function AdminSidebar() {
   }, []);
 
   // Always display the English business name and brand logo cleanly without hydration mismatch
-  const brandName = mounted ? (storeName || "Gramayon") : "Gramayon";
+  const brandName = mounted ? (storeName || "চুয়াডাঙ্গার ঐতিহ্যবাহী খেজুরের গুড়") : "চুয়াডাঙ্গার ঐতিহ্যবাহী খেজুরের গুড়";
   const brandSubtitle = "Admin Panel";
-  const effectiveLogoUrl = mounted && logoUrl ? logoUrl : "/admin-icon/icon-192.png";
+  const effectiveLogoUrl = mounted && logoUrl ? logoUrl : "";
 
   const brandInitial = brandName.slice(0, 1).toUpperCase();
 
