@@ -15,7 +15,7 @@ export const notificationEmailFunction = inngest.createFunction(
     retries: 3,
     triggers: [{ event: "notification.email.send" }],
     concurrency: {
-      limit: 15,
+      limit: 5,
     },
   },
   async ({ event, step }) => {
@@ -35,7 +35,7 @@ export const notificationSmsFunction = inngest.createFunction(
     retries: 3,
     triggers: [{ event: "notification.sms.send" }],
     concurrency: {
-      limit: 15,
+      limit: 5,
     },
   },
   async ({ event, step }) => {
@@ -57,7 +57,7 @@ export const metaCapiPurchaseFunction = inngest.createFunction(
     retries: 3,
     triggers: [{ event: "meta.capi.purchase" }],
     concurrency: {
-      limit: 20,
+      limit: 5,
     },
   },
   async ({ event, step }) => {
