@@ -281,9 +281,7 @@ function useMounted() {
 }
 
 function toCleanPath(href: string): string {
-  if (href === "/admin") return "/";
-  if (href.startsWith("/admin?")) return href.replace(/^\/admin/, "");
-  if (href.startsWith("/admin/")) return href.replace(/^\/admin/, "");
+  // Admin routes live under /admin; never strip this prefix from navigation URLs.
   return href;
 }
 
