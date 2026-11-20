@@ -21,12 +21,12 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     icons: {
       icon: [
-        { url: brand.logoUrl || "/admin-icon/icon-192.png", sizes: "192x192" },
-        { url: brand.logoUrl || "/admin-icon/icon-512.png", sizes: "512x512" },
+        { url: "/admin-icon/icon-192.png?v=20261120", sizes: "192x192", type: "image/png" },
+        { url: "/admin-icon/icon-512.png?v=20261120", sizes: "512x512", type: "image/png" },
       ],
       apple: [
         {
-          url: brand.logoUrl || "/admin-icon/apple-touch-icon.png",
+          url: "/admin-icon/apple-touch-icon.png?v=20261120",
           sizes: "180x180",
           type: "image/png",
         },
