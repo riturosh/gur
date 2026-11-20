@@ -12,7 +12,7 @@ export const notificationPushFunction = inngest.createFunction(
     retries: 3,
     triggers: [{ event: "notification.push.send" }],
     concurrency: {
-      limit: 20,
+      limit: 5,
     },
   },
   async ({ event, step }) => {
