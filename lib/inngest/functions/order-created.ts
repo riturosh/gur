@@ -11,7 +11,7 @@ export const orderCreatedFunction = inngest.createFunction(
     retries: 3,
     triggers: [{ event: "order.created" }],
     concurrency: {
-      limit: 20, // Allows up to 20 concurrent order notifications during high-traffic surges
+      limit: 5, // Matches the current Inngest plan concurrency limit
     },
   },
   async ({ event, step }) => {
