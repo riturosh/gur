@@ -8,7 +8,7 @@ export interface AdminBrandSettings {
   logoUrl: string;
 }
 
-const DEFAULT_ENGLISH_BRAND_NAME = "Gramayon";
+const DEFAULT_ENGLISH_BRAND_NAME = "চুয়াডাঙ্গার ঐতিহ্যবাহী খেজুরের গুড়";
 
 function cleanSettingValue(value: unknown): string {
   if (value === null || value === undefined) return "";
