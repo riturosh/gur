@@ -136,7 +136,7 @@ export async function GET(
   return new NextResponse(new Uint8Array(pngBuffer), {
     headers: {
       "Content-Type": "image/png",
-      "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400",
+      "Cache-Control": "no-store, max-age=0, must-revalidate",
     },
   });
 }
