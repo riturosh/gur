@@ -23,7 +23,7 @@ interface StoreHeaderProps {
 const emptySubscribe = () => () => {};
 
 export function StoreHeader({
-  storeName = "Gramayon",
+  storeName = "চুয়াডাঙ্গার ঐতিহ্যবাহী খেজুরের গুড়",
   logoUrl,
   hotline = "01843557389",
   showBackToHome = true,
