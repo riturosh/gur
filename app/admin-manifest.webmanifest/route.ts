@@ -25,19 +25,19 @@ export async function GET(request: NextRequest) {
     categories: ["business", "productivity"],
     icons: [
       {
-        src: brand.logoUrl || "/admin-icon/icon-192.png",
+        src: "/admin-icon/icon-192.png?v=20261120",
         sizes: "192x192",
         type: "image/png",
         purpose: "any",
       },
       {
-        src: brand.logoUrl || "/admin-icon/icon-512.png",
+        src: "/admin-icon/icon-512.png?v=20261120",
         sizes: "512x512",
         type: "image/png",
         purpose: "any",
       },
       {
-        src: brand.logoUrl || "/admin-icon/maskable-512.png",
+        src: "/admin-icon/maskable-512.png?v=20261120",
         sizes: "512x512",
         type: "image/png",
         purpose: "maskable",
@@ -48,7 +48,7 @@ export async function GET(request: NextRequest) {
         name: "Orders",
         short_name: "Orders",
         url: isAdminSubdomain ? "/orders" : "/admin/orders",
-        icons: [{ src: "/admin-icon/icon-192.png", sizes: "192x192", type: "image/png" }],
+        icons: [{ src: "/admin-icon/icon-192.png?v=20261120", sizes: "192x192", type: "image/png" }],
       },
       {
         name: "Messages",
