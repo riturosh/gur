@@ -25,7 +25,7 @@ export function ProductLoading({
     <ProductShowcase
       products={[]}
       defaultHotline="01843557389"
-      storeName="Gramayon"
+      storeName="চুয়াডাঙ্গার ঐতিহ্যবাহী খেজুরের গুড়"
       logoUrl="/admin-icon/icon-192.png"
       isLoading={true}
       autoScrollToProduct={autoScrollToProduct}
