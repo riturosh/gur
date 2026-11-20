@@ -239,7 +239,7 @@ export function AdminHeader() {
                   onClick={() => void promptInstall()}
                   className="cursor-pointer text-xs flex items-center justify-between text-amber-600 dark:text-amber-400"
                 >
-                  <span>Install {storeName || "Gramayon"} / অ্যাপ ইনস্টল</span>
+                  <span>Install {storeName || "চুয়াডাঙ্গার ঐতিহ্যবাহী খেজুরের গুড়"} / অ্যাপ ইনস্টল</span>
                   <Download className="h-3.5 w-3.5" />
                 </DropdownMenuItem>
               ) : null}
