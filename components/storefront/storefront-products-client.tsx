@@ -74,7 +74,7 @@ export function StorefrontProductsClient({
       <ProductShowcase
         products={orderedProducts}
         defaultHotline={data?.hotline ?? "01843557389"}
-        storeName={data?.storeName ?? "Gramayon"}
+        storeName={data?.storeName ?? "চুয়াডাঙ্গার ঐতিহ্যবাহী খেজুরের গুড়"}
         storeSubtitle={data?.storeSubtitle}
         logoUrl={data?.logoUrl || "/admin-icon/icon-192.png"}
         isLoading={isLoading}
