@@ -19,6 +19,7 @@ export interface SiteSettingsMap {
   "store.language"?: string;
   "store.logo_url"?: string;
   "store.favicon_url"?: string;
+  "store.in_app_browser_prompt_enabled"?: boolean;
 
   // SEO & Social Metadata
   "seo.site_url"?: string;
@@ -143,6 +144,7 @@ const PUBLIC_SETTING_KEYS = new Set([
   "store.language",
   "store.logo_url",
   "store.favicon_url",
+  "store.in_app_browser_prompt_enabled",
   "seo.site_url",
   "seo.default_title",
   "seo.title_template",
