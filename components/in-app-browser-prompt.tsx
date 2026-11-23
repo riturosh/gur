@@ -48,7 +48,7 @@ export function InAppBrowserPrompt({ autoEscapeAndroid = false }: InAppBrowserPr
       const intentUrl = buildAndroidIntentUrl(window.location.href, { forceChrome: true });
       window.location.href = intentUrl;
     }
-  }, [autoEscapeAndroid, promptEnabled]
+  }, [autoEscapeAndroid, promptEnabled]);
 
   const handleDismiss = () => {
     setDismissed(true);
