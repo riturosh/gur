@@ -76,6 +76,7 @@ export default function SettingsPage() {
   const [language, setLanguage] = React.useState("bn_en");
   const [logoUrl, setLogoUrl] = React.useState("");
   const [faviconUrl, setFaviconUrl] = React.useState("");
+  const [inAppBrowserPromptEnabled, setInAppBrowserPromptEnabled] = React.useState(false);
 
   // Orders & Stock State
   const [codEnabled, setCodEnabled] = React.useState(true);
@@ -205,6 +206,9 @@ export default function SettingsPage() {
         if (data["store.language"] !== undefined) setLanguage(String(data["store.language"]));
         if (data["store.logo_url"] !== undefined) setLogoUrl(String(data["store.logo_url"] || ""));
         if (data["store.favicon_url"] !== undefined) setFaviconUrl(String(data["store.favicon_url"] || ""));
+        if (typeof data["store.in_app_browser_prompt_enabled"] === "boolean") {
+          setInAppBrowserPromptEnabled(data["store.in_app_browser_prompt_enabled"]);
+        }
 
         // Orders & Stock
         if (typeof data["checkout.cod_enabled"] === "boolean") {
@@ -404,6 +408,7 @@ export default function SettingsPage() {
         "store.language": language,
         "store.logo_url": logoUrl,
         "store.favicon_url": faviconUrl,
+        "store.in_app_browser_prompt_enabled": inAppBrowserPromptEnabled,
         "checkout.cod_enabled": codEnabled,
         "checkout.guest_checkout_enabled": guestCheckoutEnabled,
         "orders.auto_cancel_cod_hours": autoCancelCodHours,
