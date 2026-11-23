@@ -815,6 +815,45 @@ export default function SettingsPage() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-base flex items-center gap-2">
+                  <Smartphone className="h-4 w-4 text-amber-600" />
+                  In-App Browser Notice
+                </CardTitle>
+                <CardDescription>
+                  Control the optional prompt shown to visitors who open the store from Facebook, Instagram, Messenger, or another in-app browser.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div
+                  onClick={() => setInAppBrowserPromptEnabled((value) => !value)}
+                  className={`flex items-start gap-3 p-3.5 rounded-lg border cursor-pointer transition-colors ${
+                    inAppBrowserPromptEnabled
+                      ? "border-amber-500/40 bg-amber-500/5 dark:bg-amber-500/10"
+                      : "border-border bg-card hover:bg-muted/40"
+                  }`}
+                >
+                  <Checkbox
+                    checked={inAppBrowserPromptEnabled}
+                    onCheckedChange={(checked) => setInAppBrowserPromptEnabled(Boolean(checked))}
+                    className="mt-0.5"
+                  />
+                  <div className="space-y-0.5">
+                    <label className="text-xs font-semibold cursor-pointer">
+                      Show “Open in Chrome” prompt
+                    </label>
+                    <p className="text-[11px] text-muted-foreground">
+                      When off, the bottom popup is hidden for all visitors. Turn it on anytime to show it again. Save Changes to apply.
+                    </p>
+                  </div>
+                  <Badge variant="outline" className={inAppBrowserPromptEnabled ? "ml-auto border-emerald-500/30 text-emerald-600" : "ml-auto"}>
+                    {inAppBrowserPromptEnabled ? "Enabled" : "Disabled"}
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
           </TabsContent>
 
           {/* Orders & Stock Tab */}
