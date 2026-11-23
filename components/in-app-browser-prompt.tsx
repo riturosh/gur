@@ -8,7 +8,7 @@ import {
 } from "@/lib/in-app-browser";
 import { ExternalLink, X, Copy, Check } from "lucide-react";
 import { toast } from "sonner";
-import { useSiteSettings } from "@/hooks/use-site-settings";
+import { getPublicSiteSettingsAction } from "@/actions/settings";
 
 interface InAppBrowserPromptProps {
   /**
@@ -22,33 +22,51 @@ export function InAppBrowserPrompt({ autoEscapeAndroid = false }: InAppBrowserPr
   const [info, setInfo] = useState<InAppBrowserInfo | null>(null);
   const [dismissed, setDismissed] = useState(true);
   const [copied, setCopied] = useState(false);
-  const { raw } = useSiteSettings();
-  const promptEnabled = raw["store.in_app_browser_prompt_enabled"] === true;
-
   useEffect(() => {
-    if (!promptEnabled) {
-      setInfo(null);
-      setDismissed(true);
-      return;
-    }
-    // Check if dismissed in this session
-    try {
-      if (sessionStorage.getItem("gur_iab_prompt_dismissed") === "1") {
-        return;
+    let cancelled = false;
+
+    const initializePrompt = async () => {
+      try {
+        const settings = await getPublicSiteSettingsAction();
+        if (cancelled) return;
+
+        if (settings["store.in_app_browser_prompt_enabled"] !== true) {
+          setInfo(null);
+          setDismissed(true);
+          return;
+        }
+
+        // Check if dismissed in this session
+        try {
+          if (sessionStorage.getItem("gur_iab_prompt_dismissed") === "1") {
+            return;
+          }
+        } catch {}
+
+        const detected = detectInAppBrowser();
+        if (!detected.isInApp) return;
+
+        setInfo(detected);
+        setDismissed(false);
+
+        if (autoEscapeAndroid && detected.isAndroid) {
+          const intentUrl = buildAndroidIntentUrl(window.location.href, { forceChrome: true });
+          window.location.href = intentUrl;
+        }
+      } catch (error) {
+        console.warn("Could not load in-app browser prompt setting:", error);
+        if (!cancelled) {
+          setInfo(null);
+          setDismissed(true);
+        }
       }
-    } catch {}
+    };
 
-    const detected = detectInAppBrowser();
-    if (!detected.isInApp) return;
-
-    setInfo(detected);
-    setDismissed(false);
-
-    if (autoEscapeAndroid && detected.isAndroid) {
-      const intentUrl = buildAndroidIntentUrl(window.location.href, { forceChrome: true });
-      window.location.href = intentUrl;
-    }
-  }, [autoEscapeAndroid, promptEnabled]);
+    initializePrompt();
+    return () => {
+      cancelled = true;
+    };
+  }, [autoEscapeAndroid]);
 
   const handleDismiss = () => {
     setDismissed(true);
