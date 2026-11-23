@@ -8,6 +8,7 @@ import {
 } from "@/lib/in-app-browser";
 import { ExternalLink, X, Copy, Check } from "lucide-react";
 import { toast } from "sonner";
+import { useSiteSettings } from "@/hooks/use-site-settings";
 
 interface InAppBrowserPromptProps {
   /**
@@ -21,8 +22,15 @@ export function InAppBrowserPrompt({ autoEscapeAndroid = false }: InAppBrowserPr
   const [info, setInfo] = useState<InAppBrowserInfo | null>(null);
   const [dismissed, setDismissed] = useState(true);
   const [copied, setCopied] = useState(false);
+  const { raw } = useSiteSettings();
+  const promptEnabled = raw["store.in_app_browser_prompt_enabled"] === true;
 
   useEffect(() => {
+    if (!promptEnabled) {
+      setInfo(null);
+      setDismissed(true);
+      return;
+    }
     // Check if dismissed in this session
     try {
       if (sessionStorage.getItem("gur_iab_prompt_dismissed") === "1") {
@@ -40,7 +48,7 @@ export function InAppBrowserPrompt({ autoEscapeAndroid = false }: InAppBrowserPr
       const intentUrl = buildAndroidIntentUrl(window.location.href, { forceChrome: true });
       window.location.href = intentUrl;
     }
-  }, [autoEscapeAndroid]);
+  }, [autoEscapeAndroid, promptEnabled]
 
   const handleDismiss = () => {
     setDismissed(true);
