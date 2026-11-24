@@ -54,13 +54,13 @@ export async function GET(request: NextRequest) {
         name: "Messages",
         short_name: "Messages",
         url: isAdminSubdomain ? "/messages" : "/admin/messages",
-        icons: [{ src: "/admin-icon/icon-192.png", sizes: "192x192", type: "image/png" }],
+        icons: [{ src: "/admin-icon/icon-192.png?v=20261124", sizes: "192x192", type: "image/png" }],
       },
       {
         name: "Inventory",
         short_name: "Inventory",
         url: isAdminSubdomain ? "/inventory" : "/admin/inventory",
-        icons: [{ src: "/admin-icon/icon-192.png", sizes: "192x192", type: "image/png" }],
+        icons: [{ src: "/admin-icon/icon-192.png?v=20261124", sizes: "192x192", type: "image/png" }],
       },
     ],
   };
