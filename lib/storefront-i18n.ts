@@ -134,9 +134,8 @@ export const STOREFRONT_TEXT = {
     // Why Buy From Us Section
     whyBuyBadge: "কেন আমাদের গুড় সেরা?",
     whyBuyTitle: "আমাদের থেকেই কেন খাঁটি গুড় কিনবেন?",
-    whyBuyReasonPriceTitle: "গলাকাটা দাম মুক্ত",
-    whyBuyReasonPriceDesc:
-      "যেহেতু গুড় আমরা নিজেরাই বানাই, শুধু আমাদের থেকেই নিতে পারবেন নায্য মূল্যে।",
+    whyBuyReasonPriceTitle: "ক্ষতিকর চুন, হাইড্রোজ, চিনি এবং অন্যান্য কেমিক্যাল মুক্ত",
+    whyBuyReasonPriceDesc: "শতভাগ বিশুদ্ধ খাঁটি খেজুরের গুড়।",
     whyBuyReason5Title: "নিরাপদ ফুড-গ্রেড প্যাকেজিং",
     whyBuyReason5Desc:
       "স্বাস্থ্যসম্মত ফুড-গ্রেড ও মজবুত প্যাকেজিং, যাতে দূরদূরান্তে ডেলিভারির সময়ও গুড়ের স্বাদ ও সতেজতা অক্ষুণ্ণ থাকে।",
@@ -308,9 +307,8 @@ export const STOREFRONT_TEXT = {
     // Why Buy From Us Section
     whyBuyBadge: "Why Choose Us",
     whyBuyTitle: "Why Buy Pure Jaggery From Us?",
-    whyBuyReasonPriceTitle: "No Exorbitant Prices",
-    whyBuyReasonPriceDesc:
-      "Since we make the jaggery ourselves, you get authentic quality at a truly fair price directly from us.",
+    whyBuyReasonPriceTitle: "Free from harmful lime, hydros, sugar, and other chemicals",
+    whyBuyReasonPriceDesc: "100% pure, authentic date palm jaggery.",
     whyBuyReason5Title: "Safe Food-Grade Packaging",
     whyBuyReason5Desc:
       "Hygienic food-grade and robust packaging so freshness, aroma, and taste remain perfectly intact even during distant deliveries.",
