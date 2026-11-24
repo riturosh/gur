@@ -11,7 +11,7 @@ function BrandFaviconInner() {
   React.useEffect(() => {
     const isAdminRoute = pathname === "/admin" || pathname.startsWith("/admin/");
     const targetUrl = isAdminRoute
-      ? "/admin-icon/icon-192.png?v=20261121"
+      ? "/admin-icon/icon-192.png?v=20261124"
       : faviconUrl;
 
     if (!targetUrl) return;
