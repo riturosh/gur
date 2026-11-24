@@ -2,8 +2,6 @@ import sharp from "sharp";
 import { NextResponse } from "next/server";
 import { getAdminBrandSettings } from "@/lib/admin-brand";
 
-export const runtime = "nodejs";
-export const dynamic = "force-dynamic";
 
 export async function GET() {
   const brand = await getAdminBrandSettings();
