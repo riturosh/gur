@@ -9,6 +9,7 @@ export interface AdminBrandSettings {
 }
 
 const DEFAULT_ENGLISH_BRAND_NAME = "চুয়াডাঙ্গার ঐতিহ্যবাহী খেজুরের গুড়";
+const DEFAULT_BRAND_LOGO_URL = "https://ik.imagekit.io/twjxu4dds/branding/logo/1795163483948-riturosh-logo-transparent_scJRBS01f.webp";
 
 function cleanSettingValue(value: unknown): string {
   if (value === null || value === undefined) return "";
@@ -42,7 +43,7 @@ async function fetchCachedAdminBrandSettings(): Promise<AdminBrandSettings> {
   const appName = map["store.name"] || DEFAULT_ENGLISH_BRAND_NAME;
   const shortName = appName.length <= 16 ? appName : appName.slice(0, 16).trim();
   const rawLogo = map["store.logo_url"] || map["store.favicon_url"] || "";
-  const logoUrl = rawLogo ? resolveCdnImageUrl(rawLogo) : "";
+  const logoUrl = rawLogo ? resolveCdnImageUrl(rawLogo) : DEFAULT_BRAND_LOGO_URL;
 
   return {
     appName,
@@ -62,7 +63,7 @@ export async function getAdminBrandSettings(): Promise<AdminBrandSettings> {
     return {
       appName: DEFAULT_ENGLISH_BRAND_NAME,
       shortName: DEFAULT_ENGLISH_BRAND_NAME,
-      logoUrl: "",
+      logoUrl: DEFAULT_BRAND_LOGO_URL,
     };
   }
 }
