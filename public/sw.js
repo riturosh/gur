@@ -4,12 +4,11 @@
 // - Minimal offline fallback screen when network navigation fails
 // - Web Push notifications with foreground suppression, App Icon Badge sync, and deep-link focus
 
-const OFFLINE_CACHE = "gur-admin-offline-v1";
+const OFFLINE_CACHE = "gur-admin-offline-v2";
 const OFFLINE_URL = "/admin-offline.html";
 const OFFLINE_ASSETS = [
   OFFLINE_URL,
-  "/icons/admin-icon-192.png",
-  "/icons/admin-badge-96.png",
+  "/admin-icon/icon-192.png",
 ];
 
 self.addEventListener("install", (event) => {
@@ -122,7 +121,7 @@ self.addEventListener("push", (event) => {
   const title = typeof payload.title === "string" && payload.title.trim() ? payload.title : "Gramayon";
   const body = typeof payload.body === "string" ? payload.body : "";
   const icon = payload.icon || "/admin-icon/icon-192.png";
-  const badge = payload.badge || "/icons/admin-badge-96.png";
+  const badge = payload.badge || "/admin-icon/icon-192.png";
   const tag = payload.tag || (payload.notificationId ? `gur-notif-${payload.notificationId}` : "gur-admin-notif");
   const targetUrl = normalizeAdminUrl(payload.url);
   const forceShow = payload.forceShow === true;
