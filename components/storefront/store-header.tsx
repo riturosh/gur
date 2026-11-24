@@ -61,7 +61,7 @@ export function StoreHeader({
                 src={
                   logoUrl
                     ? buildImageKitUrl(logoUrl, { width: 80, height: 80, quality: 80, format: "auto" })
-                    : "/admin-icon/icon-192.png"
+                    : "/favicon.ico"
                 }
                 alt={storeName}
                 className="w-full h-full object-contain p-0.5"
