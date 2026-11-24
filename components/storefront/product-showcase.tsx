@@ -335,7 +335,7 @@ export function ProductShowcase({
   };
 
   return (
-    <div className="relative w-full h-[100dvh] overflow-hidden bg-amber-50 dark:bg-stone-950 font-sans select-none">
+    <div className="riturosh-harvest-bg relative w-full h-[100dvh] overflow-hidden bg-amber-50 dark:bg-stone-950 font-sans select-none">
       {/* Sticky Header: Desktop / Tablet Only (Hidden on mobile phones to maximize vertical space) */}
       <header className="fixed top-0 left-0 right-0 z-40 h-14 sm:h-16 px-3 sm:px-6 md:px-8 bg-amber-100/95 dark:bg-stone-900/95 backdrop-blur-md border-b border-amber-200/70 dark:border-stone-800 hidden sm:flex items-center justify-between shadow-sm select-none">
         {/* Logo & Store Title */}
