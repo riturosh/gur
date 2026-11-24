@@ -113,12 +113,12 @@ self.addEventListener("push", (event) => {
     payload = event.data.json();
   } catch {
     payload = {
-      title: "Gramayon",
+      title: "Ritu Rosh",
       body: event.data.text() || "New admin notification",
     };
   }
 
-  const title = typeof payload.title === "string" && payload.title.trim() ? payload.title : "Gramayon";
+  const title = typeof payload.title === "string" && payload.title.trim() ? payload.title : "Ritu Rosh";
   const body = typeof payload.body === "string" ? payload.body : "";
   const icon = payload.icon || "/admin-icon/icon-192.png";
   const badge = payload.badge || "/admin-icon/icon-192.png";
