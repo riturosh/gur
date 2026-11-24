@@ -2,7 +2,7 @@
 
 import React from "react";
 import {
-  BadgePercent,
+  ShieldCheck,
   Box,
   Truck,
   CheckCircle2,
@@ -25,10 +25,10 @@ export function WhyBuyFromUs({
 
   const reasons = [
     {
-      icon: BadgePercent,
-      iconColor: "text-amber-700 dark:text-amber-300",
-      iconBg: "bg-amber-100 dark:bg-amber-950/80 border-amber-300 dark:border-amber-800",
-      accentGlow: "from-amber-500/10 dark:from-amber-500/15",
+      icon: ShieldCheck,
+      iconColor: "text-emerald-700 dark:text-emerald-300",
+      iconBg: "bg-emerald-100 dark:bg-emerald-950/80 border-emerald-300 dark:border-emerald-800",
+      accentGlow: "from-emerald-500/10 dark:from-emerald-500/15",
       title: t.whyBuyReasonPriceTitle,
       desc: t.whyBuyReasonPriceDesc,
     },
