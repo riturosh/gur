@@ -145,7 +145,7 @@ function resolveSeoSettingsFromMap(
   const storeNameBn = configuredStoreNameBn || DEFAULT_STORE_NAME_BN;
   const storeSubtitle = cleanString(rawMap.get("store.subtitle")) || DEFAULT_STORE_SUBTITLE;
 
-  const supportPhone = cleanString(rawMap.get("store.support_phone")) || "01843557389";
+  const supportPhone = cleanString(rawMap.get("store.support_phone")) || "01304689275";
   const email = cleanString(rawMap.get("store.email"));
   const address = cleanString(rawMap.get("store.address")) || "বাঘা, রাজশাহী, বাংলাদেশ";
   const logoUrl = resolveAbsoluteMediaUrl(cleanString(rawMap.get("store.logo_url")), siteUrl);
