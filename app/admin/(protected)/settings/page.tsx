@@ -154,7 +154,7 @@ export default function SettingsPage() {
     seoHomeDescription: "",
     seoProductsTitle: "সকল খাঁটি গুড়ের পণ্যসমূহ",
     seoProductsDescription:
-      "বাঘা, রাজশাহীর আসল ঝোলা গুড়, দানাদার পাটালি ও নলেন গুড়ের সংগ্রহ। ১০০% খাঁটি ও ক্যাশ অন ডেলিভারিতে অর্ডার করুন।",
+      "চুয়াডাঙ্গার খাঁটি খেজুরের গুড়, দানাদার পাটালি ও নলেন গুড়ের সংগ্রহ। ১০০% খাঁটি ও ক্যাশ অন ডেলিভারিতে অর্ডার করুন।",
     seoContactTitle: "যোগাযোগ ও সরাসরি অর্ডার",
     seoContactDescription:
       "ঋতুরস-এর ঠিকানা: Kirongachi, Sarojganj, Chuadanga। খাঁটি খেজুরের গুড় কিনতে বা যেকোনো তথ্যে আমাদের সাথে যোগাযোগ করুন।",
