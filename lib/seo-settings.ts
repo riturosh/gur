@@ -59,7 +59,7 @@ const DEFAULT_DESCRIPTION =
   "Pure sugarcane and date palm molasses (ঝোলা গুড়, পাটালি গুড়) manufacturing, retail, and B2B wholesale distribution platform in Bangladesh.";
 const DEFAULT_CONTACT_TITLE = "যোগাযোগ ও সরাসরি অর্ডার";
 const DEFAULT_CONTACT_DESCRIPTION =
-  "গাছিদের খাঁটি খেজুরের গুড় কিনতে বা যেকোনো তথ্যে সরাসরি ফোন, হোয়াটসঅ্যাপ বা মেসেঞ্জারে আমাদের সাথে যোগাযোগ করুন। বাঘা, রাজশাহী।";
+  "ঋতুরস-এর ঠিকানা: Kirongachi, Sarojganj, Chuadanga। খাঁটি খেজুরের গুড় কিনতে বা যেকোনো তথ্যে আমাদের সাথে যোগাযোগ করুন।";
 const DEFAULT_PRIVACY_TITLE = "গোপনীয়তা নীতি (Privacy Policy)";
 const DEFAULT_PRIVACY_DESCRIPTION =
   "আমাদের প্ল্যাটফর্মে গ্রাহকদের ব্যক্তিগত তথ্যের সর্বোচ্চ নিরাপত্তা ও গোপনীয়তা রক্ষা আমাদের প্রধান অগ্রাধিকার। জানুন আমাদের প্রাইভেসি পলিসি।";
@@ -147,7 +147,7 @@ function resolveSeoSettingsFromMap(
 
   const supportPhone = cleanString(rawMap.get("store.support_phone")) || "01304689275";
   const email = cleanString(rawMap.get("store.email"));
-  const address = cleanString(rawMap.get("store.address")) || "বাঘা, রাজশাহী, বাংলাদেশ";
+  const address = cleanString(rawMap.get("store.address")) || "Kirongachi, Sarojganj, Chuadanga, Bangladesh";
   const logoUrl = resolveAbsoluteMediaUrl(cleanString(rawMap.get("store.logo_url")), siteUrl);
 
   const defaultTitle = cleanString(rawMap.get("seo.default_title")) || DEFAULT_TITLE;
