@@ -45,10 +45,10 @@ interface StoreConfig {
 const DEFAULT_SITE_URL = getSiteUrl();
 
 const DEFAULT_STORE: StoreConfig = {
-  name: "Gramayon",
+  name: "ঋতুরস",
   tagline: "Heritage Artisanal Molasses & Natural Sweeteners",
-  address: "Bagha, Rajshahi",
-  phone: "0184-355389",
+  address: "Kirongachi, Sarojganj, Chuadanga",
+  phone: "01304689275",
   website: DEFAULT_SITE_URL,
 };
 
@@ -224,7 +224,7 @@ function PrintContent() {
   const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || DEFAULT_SITE_URL).replace(/\/+$/, "");
 
   const storeConfig: StoreConfig = React.useMemo(() => ({
-    name: storeName || DEFAULT_STORE.name,
+    name: "ঋতুরস",
     tagline: DEFAULT_STORE.tagline,
     address: address || DEFAULT_STORE.address,
     phone: supportPhone || DEFAULT_STORE.phone,
