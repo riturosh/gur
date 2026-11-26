@@ -53,7 +53,7 @@ export default async function ContactPage() {
     })),
   ]);
 
-  const hotline = storefrontData.hotline || seo.supportPhone || "01843557389";
+  const hotline = storefrontData.hotline || seo.supportPhone || "01304689275";
   const storeName = storefrontData.storeName || seo.storeNameEn || seo.storeName || "Gramayon";
   const logoUrl = storefrontData.logoUrl || seo.logoUrl || "";
   const rawPhone = hotline.replace(/[^0-9]/g, "");
