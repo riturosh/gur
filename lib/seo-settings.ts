@@ -59,13 +59,13 @@ const DEFAULT_DESCRIPTION =
   "Pure sugarcane and date palm molasses (ঝোলা গুড়, পাটালি গুড়) manufacturing, retail, and B2B wholesale distribution platform in Bangladesh.";
 const DEFAULT_CONTACT_TITLE = "যোগাযোগ ও সরাসরি অর্ডার";
 const DEFAULT_CONTACT_DESCRIPTION =
-  "ঋতুরস-এর ঠিকানা: Kirongachi, Sarojganj, Chuadanga। খাঁটি খেজুরের গুড় কিনতে বা যেকোনো তথ্যে আমাদের সাথে যোগাযোগ করুন।";
+  "ঋতুরস-এর ঠিকানা: সরোজগঞ্জ, চুয়াডাঙ্গা। খাঁটি খেজুরের গুড় কিনতে বা যেকোনো তথ্যে আমাদের সাথে যোগাযোগ করুন।";
 const DEFAULT_PRIVACY_TITLE = "গোপনীয়তা নীতি (Privacy Policy)";
 const DEFAULT_PRIVACY_DESCRIPTION =
   "আমাদের প্ল্যাটফর্মে গ্রাহকদের ব্যক্তিগত তথ্যের সর্বোচ্চ নিরাপত্তা ও গোপনীয়তা রক্ষা আমাদের প্রধান অগ্রাধিকার। জানুন আমাদের প্রাইভেসি পলিসি।";
 const DEFAULT_PRODUCTS_TITLE = "সকল খাঁটি গুড়ের পণ্যসমূহ";
 const DEFAULT_PRODUCTS_DESCRIPTION =
-  "বাঘা, রাজশাহীর আসল ঝোলা গুড়, দানাদার পাটালি ও নলেন গুড়ের সংগ্রহ। ১০০% খাঁটি ও ক্যাশ অন ডেলিভারিতে অর্ডার করুন।";
+  "চুয়াডাঙ্গার খাঁটি ঝোলা গুড়, দানাদার পাটালি ও নলেন গুড়ের সংগ্রহ। ১০০% খাঁটি ও ক্যাশ অন ডেলিভারিতে অর্ডার করুন।";
 
 function cleanString(value: unknown): string {
   if (value === null || value === undefined) return "";
@@ -147,7 +147,7 @@ function resolveSeoSettingsFromMap(
 
   const supportPhone = cleanString(rawMap.get("store.support_phone")) || "01304689275";
   const email = cleanString(rawMap.get("store.email"));
-  const address = cleanString(rawMap.get("store.address")) || "Kirongachi, Sarojganj, Chuadanga, Bangladesh";
+  const address = cleanString(rawMap.get("store.address")) || "সরোজগঞ্জ, চুয়াডাঙ্গা, বাংলাদেশ";
   const logoUrl = resolveAbsoluteMediaUrl(cleanString(rawMap.get("store.logo_url")), siteUrl);
 
   const defaultTitle = cleanString(rawMap.get("seo.default_title")) || DEFAULT_TITLE;
