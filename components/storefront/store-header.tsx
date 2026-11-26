@@ -25,7 +25,7 @@ const emptySubscribe = () => () => {};
 export function StoreHeader({
   storeName = "চুয়াডাঙ্গার ঐতিহ্যবাহী খেজুরের গুড়",
   logoUrl,
-  hotline = "01843557389",
+  hotline = "01304689275",
   showBackToHome = true,
 }: StoreHeaderProps) {
   const dispatch = useAppDispatch();
