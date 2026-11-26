@@ -151,7 +151,7 @@ export default function SettingsPage() {
     seoOgImageUrl: "",
     seoTwitterHandle: "",
     seoHomeTitle: "",
-    seoHomeDescription: "",
+    seoHomeDescription: "চুয়াডাঙ্গার ঐতিহ্যবাহী খাঁটি খেজুরের গুড়",
     seoProductsTitle: "সকল খাঁটি গুড়ের পণ্যসমূহ",
     seoProductsDescription:
       "চুয়াডাঙ্গার খাঁটি খেজুরের গুড়, দানাদার পাটালি ও নলেন গুড়ের সংগ্রহ। ১০০% খাঁটি ও ক্যাশ অন ডেলিভারিতে অর্ডার করুন।",
