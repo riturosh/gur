@@ -284,7 +284,7 @@ function OrderConfirmedContent() {
   // Fetch real products from server for authentic real product pictures
   const { data: storefrontData } = useStorefrontProducts();
   const catalogProducts = storefrontData?.products ?? [];
-  const brandName = storefrontData?.storeName || "RituRosh";
+  const brandName = "ঋতুরস";
   const brandLogoUrl = storefrontData?.logoUrl || "/admin-icon/icon-192.png";
 
   const resolveRealProductImage = (item: OrderItem): string => {
