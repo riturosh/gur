@@ -34,7 +34,7 @@ const DRAFT_ORDER_SESSION_KEY = "gur_draft_order_id";
 
 export function PhoneHelpForm({
   lang = "bn",
-  hotline = "01843557389",
+  hotline = "01304689275",
   onScrollToProducts,
 }: PhoneHelpFormProps) {
   const [phone, setPhone] = useState("");
