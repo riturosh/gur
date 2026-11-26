@@ -35,7 +35,7 @@ import type { OrderItem } from "@/types/order";
 import { getClientFbpAndFbc, trackPurchase } from "@/lib/facebook-pixel";
 import { enrichOrderMetaTrackingAction } from "@/actions/facebook-capi";
 
-const HOTLINE_NUMBER = "01843557389";
+const HOTLINE_NUMBER = "01304689275";
 const RAW_HOTLINE = HOTLINE_NUMBER.replace(/[^0-9]/g, "");
 
 /**
@@ -125,10 +125,10 @@ function OrderConfirmedSkeleton() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/admin-icon/icon-192.png"
-            alt="Gramayon"
+            alt="RituRosh"
             className="w-4 h-4 rounded-full object-contain bg-white p-0.5 shrink-0"
           />
-          <span>Gramayon</span>
+          <span>RituRosh</span>
         </div>
       </header>
 
@@ -250,7 +250,7 @@ function OrderConfirmedSkeleton() {
       </div>
 
       <footer className="relative z-10 max-w-2xl mx-auto w-full text-center pt-4 border-t border-amber-200/80 dark:border-stone-800 text-[11px] text-stone-500">
-        © 2026 Gramayon • ঐতিহ্যবাহী নির্ভেজাল গুড়ের বিশ্বস্ত ঠিকানা
+        © 2026 RituRosh • ঐতিহ্যবাহী নির্ভেজাল গুড়ের বিশ্বস্ত ঠিকানা
       </footer>
     </main>
   );
@@ -284,7 +284,7 @@ function OrderConfirmedContent() {
   // Fetch real products from server for authentic real product pictures
   const { data: storefrontData } = useStorefrontProducts();
   const catalogProducts = storefrontData?.products ?? [];
-  const brandName = storefrontData?.storeName || "Gramayon";
+  const brandName = storefrontData?.storeName || "RituRosh";
   const brandLogoUrl = storefrontData?.logoUrl || "/admin-icon/icon-192.png";
 
   const resolveRealProductImage = (item: OrderItem): string => {
