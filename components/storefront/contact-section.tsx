@@ -38,7 +38,7 @@ export function ContactSection({
   lang = "bn",
   hotline = "01304689275",
   storeName,
-  address = "Kirongachi, Sarojganj, Chuadanga",
+  address = "সরোজগঞ্জ, চুয়াডাঙ্গা",
   messengerUrl,
   isStandaloneSection = true,
   onScrollToProducts,
