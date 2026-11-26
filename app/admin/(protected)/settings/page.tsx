@@ -70,7 +70,7 @@ export default function SettingsPage() {
   const [supportPhone, setSupportPhone] = React.useState("+880 1304-689275");
   const [email, setEmail] = React.useState("billing@molassesstore.com");
   const [address, setAddress] = React.useState(
-    "24/B Industrial Area, Tejgaon Industrial Area, Dhaka-1208, Bangladesh"
+    "Kirongachi, Sarojganj, Chuadanga"
   );
   const [timezone, setTimezone] = React.useState("Asia/Dhaka");
   const [language, setLanguage] = React.useState("bn_en");
@@ -157,7 +157,7 @@ export default function SettingsPage() {
       "বাঘা, রাজশাহীর আসল ঝোলা গুড়, দানাদার পাটালি ও নলেন গুড়ের সংগ্রহ। ১০০% খাঁটি ও ক্যাশ অন ডেলিভারিতে অর্ডার করুন।",
     seoContactTitle: "যোগাযোগ ও সরাসরি অর্ডার",
     seoContactDescription:
-      "গাছিদের খাঁটি খেজুরের গুড় কিনতে বা যেকোনো তথ্যে সরাসরি ফোন, হোয়াটসঅ্যাপ বা মেসেঞ্জারে আমাদের সাথে যোগাযোগ করুন। বাঘা, রাজশাহী।",
+      "ঋতুরস-এর ঠিকানা: Kirongachi, Sarojganj, Chuadanga। খাঁটি খেজুরের গুড় কিনতে বা যেকোনো তথ্যে আমাদের সাথে যোগাযোগ করুন।",
     seoPrivacyTitle: "গোপনীয়তা নীতি (Privacy Policy)",
     seoPrivacyDescription:
       "আমাদের প্ল্যাটফর্মে গ্রাহকদের ব্যক্তিগত তথ্যের সর্বোচ্চ নিরাপত্তা ও গোপনীয়তা রক্ষা আমাদের প্রধান অগ্রাধিকার। জানুন আমাদের প্রাইভেসি পলিসি।",
