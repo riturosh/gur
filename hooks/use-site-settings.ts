@@ -48,7 +48,7 @@ export const DEFAULT_SITE_SETTINGS: SiteSettingsMap = {
   "store.support_phone": "+8801304689275",
   "store.whatsapp": "+8801304689275",
   "store.email": "billing@molassesstore.com",
-  "store.address": "24/B Industrial Area, Tejgaon Industrial Area, Dhaka-1208, Bangladesh",
+  "store.address": "Kirongachi, Sarojganj, Chuadanga",
   "store.timezone": "Asia/Dhaka",
   "store.language": "bn_en",
   "checkout.cod_enabled": true,
