@@ -67,7 +67,7 @@ export default function SettingsPage() {
   const [storeName, setStoreName] = React.useState("Molasses Store");
   const [storeNameBn, setStoreNameBn] = React.useState("মোলাসেস স্টোর বাংলাদেশ");
   const [currency, setCurrency] = React.useState("BDT");
-  const [supportPhone, setSupportPhone] = React.useState("+880 1700-000001");
+  const [supportPhone, setSupportPhone] = React.useState("+880 1304-689275");
   const [email, setEmail] = React.useState("billing@molassesstore.com");
   const [address, setAddress] = React.useState(
     "24/B Industrial Area, Tejgaon Industrial Area, Dhaka-1208, Bangladesh"
@@ -128,7 +128,7 @@ export default function SettingsPage() {
   const [smsBalance, setSmsBalance] = React.useState<number | null>(null);
   const [testingSms, setTestingSms] = React.useState(false);
   const [testSmsPhone, setTestSmsPhone] = React.useState("");
-  const [whatsapp, setWhatsapp] = React.useState("+880 1711-234567");
+  const [whatsapp, setWhatsapp] = React.useState("+880 1304-689275");
   const [smtpServer, setSmtpServer] = React.useState("smtp.sendgrid.net (Port 587)");
 
   // Brevo Transactional Email Notification State
@@ -758,7 +758,7 @@ export default function SettingsPage() {
                     <Input
                       value={supportPhone}
                       onChange={(e) => setSupportPhone(e.target.value)}
-                      placeholder="+880 1700-000000"
+                      placeholder="+880 1304-689275"
                       className="font-mono"
                     />
                   </div>
@@ -1761,7 +1761,7 @@ export default function SettingsPage() {
                     <Input
                       value={whatsapp}
                       onChange={(e) => setWhatsapp(e.target.value)}
-                      placeholder="+880 1711-000000"
+                      placeholder="+880 1304-689275"
                       className="font-mono text-xs"
                     />
                     <p className="text-[11px] text-muted-foreground">
