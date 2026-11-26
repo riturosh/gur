@@ -36,7 +36,7 @@ interface ContactSectionProps {
 
 export function ContactSection({
   lang = "bn",
-  hotline = "01843557389",
+  hotline = "01304689275",
   storeName,
   address = "বাঘা, রাজশাহী",
   messengerUrl,
