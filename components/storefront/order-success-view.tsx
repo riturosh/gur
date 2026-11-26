@@ -28,7 +28,7 @@ export function OrderSuccessView({
   grandTotal,
   deliveryZone,
   lang,
-  hotline = "01843557389",
+  hotline = "01304689275",
   onReset,
 }: OrderSuccessViewProps) {
   const t = STOREFRONT_TEXT[lang];
